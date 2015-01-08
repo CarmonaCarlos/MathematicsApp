@@ -1,0 +1,28 @@
+{
+  "version": "2.2",
+  "name": "MathematicsApp",
+  "description": "Determinantes, ecuaciones simultaneas y ecuacion de segundo grado",
+  "launch_path": "/index.html",
+  "fullscreen": "true",
+  "icons": {
+    "32": "/img/icono32.png",
+    "64": "/img/icono64.png",
+    "128": "/img/icono128.png"
+  },
+  "developer": {
+    "name": "Carlos Carmona, Jose Mario Melendez Barraza",
+    "url": "http://www.mathematicsapp.esy.es"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "locales": {
+    "es": {
+      "description": "Determinantes, ecuaciones simultaneas y ecuacion de segundo grado",
+      "developer": {
+        "url": "http://www.mathematicsapp.esy.es"
+      }
+    }
+  },
+  "default_locale": "es"
+}

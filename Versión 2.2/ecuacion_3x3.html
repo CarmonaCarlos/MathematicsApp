@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no"/>
+  <title>Ecuación 3x3</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="css/estilo.css"/>
+  <link rel="stylesheet" href="css/transitions.css"/>
+  <link rel="stylesheet" href="css/util.css"/>
+  <script src="js/jquery-2.1.1.min.js"></script>
+</head>
+<body role="application">
+  <section data-type="sidebar">
+    <header>
+      <menu type="toolbar">
+        <a href="#"><span>Listo</span></a>
+      </menu>
+      <h1>Menú</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Determinante De Una Matriz</a></li>
+        <li><a href="ecuaciones_simultaneas.html">Ecuaciones Simultaneas</a></li>
+        <li><a href="ecuacion_segundo_grado.html">Ecuación De Segundo Grado</a></li>
+        <li><a href="soporte.html">Soporte</a></li>
+      <!--</ul>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>Idioma</h2>
+      <br>
+      <ul>
+      <li><a href="#">Ingles</a></li>
+      </ul>-->
+    </nav>
+  </section>
+<section id="drawer" role="region">
+    <header class="fixed">
+      <a href="#"><span class="icon icon-menu">hide sidebar</span></a>
+      <a href="#drawer"><span class="icon icon-menu">show sidebar</span></a>
+      <menu type="toolbar">
+        <a href="ecuaciones_simultaneas.html"><span class="icon icon-back">edit</span></a>
+      </menu>
+      <h1>Ecuaciones<em> MathematicsApp</em></h1>
+    </header>
+  <article class="scrollable header">
+    <div class="app">
+        <br>
+        <br>
+        <strong>Ecuacion 3x3</strong>
+        <br>
+        <br>
+        Introduce los datos:
+        <br>
+        <br>
+        <form name="form1"><table cellspacing="2"align="center">
+        <tr>
+        <td><input  size="3" autofocus placeholder="X" type="number" step="any" name="numero1"  id="A"></td>
+        <td><input  size="3" placeholder="Y" type="number" step="any" name="numero2"  id="B"></td>
+        <td><input  size="3" placeholder="Z" type="number" step="any" name="numero3"  id="C"></td>
+        <td><input  size="3" placeholder="=" type="number" step="any" name="termino1" id="D"></td>
+        </table>
+        <table cellspacing="2"align="center">
+        <td><input  size="3" placeholder="X" type="number" step="any" name="numero4"  id="E"></td>
+        <td><input  size="3" placeholder="Y" type="number" step="any" name="numero5"  id="F"></td>
+        <td><input  size="3" placeholder="Z" type="number" step="any" name="numero6"  id="G"></td>
+        <td><input  size="3" placeholder="=" type="number" step="any" name="termino2" id="H"></td>
+        </table>
+        <table cellspacing="2"align="center">
+        <td><input  size="3" placeholder="X" type="number" step="any" name="numero7"  id="I"></td>
+        <td><input  size="3" placeholder="Y" type="number" step="any" name="numero8"  id="J"></td>
+        <td><input  size="3" placeholder="Z" type="number" step="any" name="numero9"  id="K"></td>
+        <td><input  size="3" placeholder="=" type="number" step="any" name="termino3" id="L"></td>
+        </table>
+        <br/>
+        <div id = "resultado" class = "resultadoFinal"></div>
+        <br/>
+        <br>
+        <button class="danger" id="limpiar" type="reset" />Borrar todo</button>
+        <center><button id='boton'>Calcular determinate</button></center>
+        </form>    
+        <script type="text/javascript" src="js/ecuacion_simultanea_3x3.js">
+      </script> 
+    </div>
+  </article>
+</section>
+</body>
+</html>

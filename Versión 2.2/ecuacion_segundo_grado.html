@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no"/>
+  <title>Ecuación De Segundo Grado</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="css/estilo.css"/>
+  <link rel="stylesheet" href="css/transitions.css"/>
+  <link rel="stylesheet" href="css/util.css"/>
+  <script src="jquery-2.1.1.min.js"></script>
+</head>
+<body role="application">
+  <section data-type="sidebar">
+    <header>
+      <menu type="toolbar">
+        <a href="#"><span>Listo</span></a>
+      </menu>
+      <h1>Menú</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Determinante de una matriz</a></li>
+        <li><a href="ecuaciones_simultaneas.html">Ecuaciones Simultaneas</a></li>
+        <li><a href="ecuacion_segundo_grado.html">Ecuación De Segundo Grado</a></li>
+        <li><a href="soporte.html">Soporte</a></li>
+      <!--</ul>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2>Idioma</h2>
+      <br>
+      <ul>
+      <li><a href="#">Ingles</a></li>
+      </ul>-->
+    </nav>
+  </section>
+<section id="drawer" role="region">
+    <header class="fixed">
+      <a href="#"><span class="icon icon-menu">hide sidebar</span></a>
+      <a href="#drawer"><span class="icon icon-menu">show sidebar</span></a>
+      <h1>Ecuacion de segundo grado<em> MathematicsApp</em></h1>
+    </header>
+  <article class="scrollable header">
+    <div class="app">
+        <br>
+        <br>
+        <strong>Ecuación de segundo grado</strong>
+        <br>
+        <br>
+        Introduce los datos:
+        <br>
+        <br>
+        <br>
+        <form name="form1"><table cellspacing="15"align="center">
+        <tr>
+        <td><input size="5" type="number" name="numero1"  id="A"></td>
+        <td><sub>X</sub>2</td>
+        <td><input size="5" type="number" name="numero2"  id="B"></td>
+        <td>X</td>
+        <td><input size="5" type="number" name="numero3" id="C"></td>
+        <td>=0</td>
+        </table>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="danger" id="limpiar" type="reset" />Borrar todo</button>
+        </form>    
+        <center><button id='boton'>Calcular Ecuación</button></center>
+        <script type="text/javascript">
+          function mostrar() {
+            //navigator.vibrate(300);
+            $('.confirmacion').slideDown('slow');
+            var ok= document.getElementById('boton_ok');
+            ok.addEventListener("click", function(ev){
+            $('.confirmacion').hide(100);
+            ev.preventDefault();
+            });
+          };
+var borrar= document.getElementById('limpiar')
+  borrar.addEventListener("click",function (){
+  var txt1 = document.getElementById("A");
+    var txt2 = document.getElementById("B");
+    var txt3 = document.getElementById("C");
+    txt1.style.border = "1px solid gray";
+    txt2.style.border = "1px solid gray";
+    txt3.style.border = "1px solid gray";
+  });
+    var botonx= document.getElementById('boton');
+    botonx.addEventListener("click",function (){
+    var txt1 = document.getElementById("A");
+    var txt2 = document.getElementById("B");
+    var txt3 = document.getElementById("C");
+    txt1.style.border = "1px solid gray";
+    txt2.style.border = "1px solid gray";
+    txt3.style.border = "1px solid gray";
+    var a = function (txt1){
+            if(txt1.value== "" || txt1.value== null) {
+              txt1.style.border = "2px solid red";
+          }
+          }
+          var b = function (txt2){
+           if(txt2.value== "" || txt2.value== null) {
+              txt2.style.border = "2px solid red";
+          }
+            }
+            var c = function (txt3){
+            if(txt3.value== "" || txt3.value== null) {
+                 txt3.style.border = "2px solid red";
+            }
+            }
+            if((txt1.value== "" || txt1.value== null)||(txt2.value== "" || txt2.value== null)||(txt3.value== "" || txt3.value== null)){
+          mostrar();
+          a(txt1);
+          b(txt2);
+          c(txt3);
+            }
+            else{
+    var a=document.form1.numero1.value;
+    var b=document.form1.numero2.value;
+    var c=document.form1.numero3.value;
+    var D = (b*b)-(4*a*c);
+    if (D==0){
+      d= Math.sqrt(D);
+      x1=((-1*b)+(d))/(2*a);
+      var msg1= 'Solución real\n\n\n'+'X1 = '+x1.toFixed(3)+'\n'+'Discriminante = '+D.toFixed(3);
+      alert(msg1);
+    }
+    else if (D>0){
+      d= Math.sqrt(D);
+      x1=((-1*b)+(d))/(2*a);
+      x2=((-1*b)-(d))/(2*a);;
+      var msg2= 'Solución real\n\n\n'+'X1 = '+x1.toFixed(3)+'\n'+'x2 = '+x2+'\n'+'Discriminante = '+D.toFixed(3);
+      alert(msg2);
+    }
+    else{
+      var dp= D*-1;
+      var x= Math.sqrt(dp)/(2*a);
+    var real= b*(-1)/(2*a);
+      var msg3= 'Solución imaginaria\n\n\n'+'X1 = '+real.toFixed(3)+'+'+x.toFixed(3)+'i\n'+'X2 = '+real.toFixed(3)+'-'+x.toFixed(3)+'i\n'+'Discriminante = '+D.toFixed(3);
+      alert(msg3);
+    }
+  }
+    });
+        </script> 
+      </div>
+    </article>
+  </section>
+</body>
+</html>

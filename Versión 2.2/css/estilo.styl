@@ -1,0 +1,1401 @@
+*
+  font-family: 'FiraSans'
+
+@font-face
+  font-family: 'FiraSans'
+  src: url("..//fonts/FiraSans/FiraSans-Regular.eot")
+  src: url("..//fonts/FiraSans/FiraSans-Regular.eot?#iefix") format('embedded-opentype'), url("..//fonts/FiraSans/FiraSans-Regular.woff") format('woff'), url("..//fonts/FiraSans/FiraSans-Regular.ttf") format('truetype')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'FiraSans'
+  src: url("..//fonts/FiraSans/FiraSans-Light.eot")
+  src: url("..//fonts/FiraSans/FiraSans-Light.eot?#iefix") format('embedded-opentype'), url("..//fonts/FiraSans/FiraSans-Light.woff") format('woff'), url("..//fonts/FiraSans/FiraSans-Light.ttf") format('truetype')
+  font-weight: 300
+  font-style: normal
+
+@font-face
+  font-family: 'FiraSans'
+  src: url("..//fonts/FiraSans/FiraSans-Medium.eot")
+  src: url("..//fonts/FiraSans/FiraSans-Medium.eot?#iefix") format('embedded-opentype'), url("..//fonts/FiraSans/FiraSans-Medium.woff") format('woff'), url("..//fonts/FiraSans/FiraSans-Medium.ttf") format('truetype')
+  font-weight: 500
+  font-style: normal
+
+@font-face
+  font-family: 'FiraSans'
+  src: url("..//fonts/FiraSans/FiraSans-Bold.eot")
+  src: url("..//fonts/FiraSans/FiraSans-Bold.eot?#iefix") format('embedded-opentype'), url("..//fonts/FiraSans/FiraSans-Bold.woff") format('woff'), url("..//fonts/FiraSans/FiraSans-Bold.ttf") format('truetype')
+  font-weight: bold
+  font-style: normal
+
+html,
+body
+  margin: 0
+  padding: 0
+  font-size: 10px
+  background-color: #fff
+  height: 100%
+  overflow-x: hidden
+
+h2.bb-docs
+  font-size: 1.8rem
+  font-weight: 300
+  color: #666
+  margin: -0.1rem 0 0
+  background-color: #f5f5f5
+  padding: 0.4rem 0.4rem 0.4rem 3rem
+  border: solid 0.1rem #e8e8e8
+
+section[role="region"]
+  height: 100%
+  line-height: 1em
+  font-size: 2.2rem
+  position: relative
+
+div[role="main"]
+  background: #fff
+  height: calc(100% - 5rem)
+  overflow: hidden
+
+div[role="main"] p
+  margin: 2rem 2.5rem
+
+/*-------------------Modificacion a la seccion principal de la pagina-------------- */
+.app
+  font-size: 18px
+  text-align: center
+  margin: auto
+  width: 80%
+
+.resultadoFinal
+  display none
+  background #B0B0B0
+  box-shadow  5px 5px 3px #888888
+  border-radius 15px 15px 15px 15px
+  color #FFFFFF 
+  padding 0.5em
+  font-size 21px
+
+
+/*-------------------Termina modificacion a la seccion principal de la pagina------ */
+
+
+/*----------------------------------Begin Buttons-----------------------------------*/
+/* ----------------------------------
+ * Buttons
+ * ---------------------------------- */
+.button::-moz-focus-inner,
+[role="button"]::-moz-focus-inner,
+button::-moz-focus-inner
+  border: none
+  outline: none
+
+button,
+[role="button"],
+.button
+  font-family: sans-serif
+  font-style: italic
+  width: 100%
+  height: 4rem
+  margin: 0 0 1rem
+  padding: 0 1.2rem
+  -moz-box-sizing: border-box
+  display: inline-block
+  vertical-align: middle
+  text-overflow: ellipsis
+  white-space: nowrap
+  overflow: hidden
+  background: #d8d8d8
+  border: none
+  border-radius: 2rem
+  font-weight: normal
+  font-size: 1.6rem
+  line-height: 4rem
+  color: #333
+  text-align: center
+  text-decoration: none
+  outline: none
+
+/* Recommend */
+button.recommend,
+[role="button"].recommend
+  background-color: #00caf2
+  color: #fff
+
+/* Danger */
+button.danger,
+.danger[role="button"]
+  background-color: #e51e1e
+  color: #fff
+
+/* Pressed */
+button:active,
+[role="button"]:active,
+.button:active
+  background-color: #b2f2ff
+  color: #fff
+
+/* Pressed with dark skin */
+.skin-dark button:active,
+.skin-dark [role="button"]:active,
+.skin-dark .button:active
+  background-color: #0ac
+
+/* Disabled */
+button[disabled],
+[role="button"][aria-disabled="true"],
+.button[aria-disabled="true"]
+  background-color: rgba(0,0,0,0.05)
+  color: #c7c7c7
+  pointer-events: none
+
+button[disabled].recommend,
+[role="button"][aria-disabled="true"].recommend,
+.button[aria-disabled="true"].recommend
+  background-color: #97cbd5
+  color: rgba(255,255,255,0.5)
+
+button[disabled].danger,
+[role="button"][aria-disabled="true"].danger,
+.button[aria-disabled="true"].danger
+  background-color: #eb7474
+  color: rgba(255,255,255,0.5)
+
+/* Disabled with dark background */
+.skin-dark button[disabled],
+.skin-dark .button[aria-disabled="true"],
+.skin-dark [role="button"][aria-disabled="true"]
+  background-color: #565656
+  color: rgba(255,255,255,0.4)
+
+.skin-dark button[disabled].recommend,
+.skin-dark .button[aria-disabled="true"].recommend,
+.skin-dark [role="button"][aria-disabled="true"].recommend
+  background-color: #006579
+
+.skin-dark button[disabled].danger,
+.skin-dark .button[aria-disabled="true"].danger,
+.skin-dark [role="button"][aria-disabled="true"].danger
+  background-color: #730f0f
+
+button[disabled]::-moz-selection,
+.button[aria-disabled="true"]::-moz-selection,
+[role="button"][aria-disabled="true"]::-moz-selection
+  -moz-user-select: none
+
+/* ----------------------------------
+ * Buttons inside lists
+ * ---------------------------------- */
+li button,
+li [role="button"],
+li .button
+  position: relative
+  text-align: left
+  border: 0.1rem solid #c7c7c7
+  background: rgba(0,0,0,0.05)
+  margin: 0 0 1rem
+  overflow: hidden
+  border-radius: 0
+  display: flex
+  height: auto
+  min-height: 4rem
+  text-overflow: initial
+  white-space: normal
+  line-height: 2rem
+  padding: 1rem 1.2rem
+
+/* Press */
+li [role="button"]:active:after,
+li .button:active:after,
+li button:active:after
+  opacity: 0
+
+/* Disabled */
+li button:disabled,
+li [role="button"][aria-disabled="true"],
+li .button[aria-disabled="true"]
+  opacity: 0.5
+
+/* Icons */
+li button.icon,
+li [role="button"].icon,
+li .button.icon
+  padding-right: 4rem
+
+li button.icon:before,
+li [role="button"].icon:before,
+li .button.icon:before
+  content: ""
+  width: 3rem
+  height: 3rem
+  position: absolute
+  top: 50%
+  right: 0.5rem
+  margin-top: -1.5rem
+  background: transparent no-repeat center center/100% auto
+  pointer-events: none
+
+li button.icon-view:active,
+li [role="button"].icon-view:active
+  background-color: #b2f2ff
+
+li button.icon-view:before,
+li [role="button"].icon-view:before
+  background-image: url("buttons/images/next.png")
+  right: 0
+
+/* Getting more space for text, as icon is shorter */
+li button.icon-dialog,
+li [role="button"].icon-dialog,
+li .button.icon-dialog
+  padding-right: 3rem
+
+li button.icon-dialog:before,
+li [role="button"].icon-dialog:before,
+li .button.icon-dialog:before
+  width: 0
+  height: 0
+  top: auto
+  right: 0.8rem
+  bottom: 0.5rem
+  border-top: 0.7rem solid transparent
+  border-bottom: 0.7rem solid transparent
+  border-left: 0.7rem solid #00aac5
+  transform: rotate(45deg)
+  z-index: 1
+
+li button.icon-dialog:disabled:before,
+li [role="button"][aria-disabled="true"].icon-dialog:before,
+li .button[aria-disabled="true"].icon-dialog:before
+  border-left: 0.7rem solid #a9a9a9
+
+/* ----------------------------------
+ * Theme: Dark
+ * ---------------------------------- */
+.skin-dark li button,
+.skin-dark li [role="button"],
+.skin-dark li .button
+  background-color: #454545
+  border: none
+  color: #fff
+  font-weight: normal
+
+.skin-dark li button:active,
+.skin-dark li [role="button"]:active
+  background-color: #0ac
+
+.skin-dark li button.icon-view:active,
+.skin-dark li [role="button"].icon-view:active
+  background-color: #0ac
+
+.skin-dark li button.icon-dialog:active:before,
+.skin-dark li [role="button"].icon-dialog:active:before,
+.skin-dark li .button.icon-dialog:active:before
+  border-left: 0.7rem solid #b2f2ff
+
+.skin-dark li button:disabled,
+.skin-dark li [role="button"][aria-disabled="true"],
+.skin-dark li .button[aria-disabled="true"]
+  background-color: #454545
+  opacity: 0.5
+
+/* Inputs inside of .button */
+.button input,
+body[role="application"] .button input
+  border: 0
+  background: none
+
+/* select */
+select
+  width: 100%
+  -moz-box-sizing: border-box
+  font-family: sans-serif
+  font-style: italic
+  font-size: 1.6rem
+  color: #333
+  margin: 0 0 1rem
+  padding: 0 0 0 1.1rem
+  text-overflow: ellipsis
+  white-space: nowrap
+  overflow: hidden
+  height: 4rem
+  border: 0.1rem solid #c7c7c7
+  background: rgba(0,0,0,0.05)
+
+.skin-dark select
+  background-color: rgba(87,87,87,0.8)
+  border: none
+  color: #fff
+
+/* remove dotted outline */
+select:-moz-focusring
+  color: transparent
+  text-shadow: 0 0 0 #333
+
+.skin-dark select:-moz-focusring
+  text-shadow: 0 0 0 #fff
+
+/* Hides dropdown arrow until bug #649849 is fixed */
+.button.icon select
+  position: absolute
+  top: -0.6rem
+  left: 0
+  width: calc(100% + 3rem)
+  height: 100%
+  margin: 0
+  padding: 0 5rem 0 0
+  text-indent: 0
+  font-weight: 400
+  font-size: 1.7rem
+  /*
+    The select element uses the text color to determine the color of the outline.
+    We put a text shadow with needed offset and no blur, so that replaces the text.
+  */
+  color: rgba(0,0,0,0)
+  text-shadow: 1rem 0.5rem 0 #333
+  border: none
+  background: none
+
+.button.icon select option
+  color: #000
+  border: 0
+  padding: 0.6rem 1.3rem
+  text-shadow: 0 0 0 rgba(0,0,0,0)
+
+.button.icon-dialog
+  overflow: hidden
+
+/******************************************************************************
+ * Right-To-Left layout
+ */
+html[dir="rtl"] li button,
+html[dir="rtl"] li a[role="button"],
+html[dir="rtl"] li .button
+  text-align: right
+
+html[dir="rtl"] li button.icon,
+html[dir="rtl"] li .icon[role="button"],
+html[dir="rtl"] li .button.icon
+  padding: 1rem 1.3rem 1rem 4rem
+
+html[dir="rtl"] li button.icon-dialog,
+html[dir="rtl"] li [role="button"].icon-dialog,
+html[dir="rtl"] li .button.icon-dialog
+  padding-left: 3rem
+
+html[dir="rtl"] li button.icon-view:before,
+html[dir="rtl"] li .icon-view[role="button"]:before
+  left: 0
+  right: auto
+  transform: rotate(180deg)
+
+html[dir="rtl"] li button.icon-dialog:before,
+html[dir="rtl"] li .icon-dialog[role="button"]:before,
+html[dir="rtl"] li .button.icon-dialog:before
+  left: 0.8rem
+  right: auto
+  transform: rotate(135deg)
+
+html[dir="rtl"] select
+  padding: 0 1.2rem 0 0
+  /* .3rem right space because of italic */
+  text-align: right
+
+/* Hides dropdown arrow until bug #649849 is fixed */
+html[dir="rtl"] .button.icon-dialog select
+  left: auto
+  right: 0.3rem
+  /* .3rem space because of italic */
+  text-indent: 1rem
+  padding: 0 0 0 4rem
+
+/*----------------------------------End Buttons-------------------------------------*/
+/*----------------------------------Begin Drawer------------------------------------*/
+/* ----------------------------------
+* Drawer
+* ---------------------------------- */
+/* Main region */
+section[role="region"]
+  width: 100%
+  transition: all 0.25s ease
+  position: relative
+  z-index: 100
+
+section[role="region"]:target
+  transform: translateX(80%)
+
+/* Hide anchor to change target */
+section[role="region"] > header:first-child > a:first-of-type
+  display: none
+
+section[role="region"]:target > header:first-child > a:first-of-type
+  display: block
+
+section[role="region"] > header:first-child > a:last-of-type
+  display: block
+
+section[role="region"]:target > header:first-child > a:last-of-type
+  display: none
+
+/* Sidebar */
+section[data-type="sidebar"]
+  position: absolute
+  width: 80%
+  background: url("..//styles/drawer/images/ui/pattern.png") repeat
+  height: 100%
+  top: 0
+  left: 0
+  overflow: hidden
+
+/* Sidebar header */
+section[data-type="sidebar"] > header
+  position: relative
+  z-index: 10
+  height: 5rem
+  color: #fff
+  background: url("..//styles/drawer/images/ui/header.png") repeat-x left bottom/100% auto
+
+section[data-type="sidebar"] > header:after
+  content: ""
+  height: 0.3rem
+  position: absolute
+  top: 100%
+  left: 0
+  right: 0
+  background: url("..//styles/drawer/images/ui/shadow_header.png") repeat-x left top
+  background-size: auto 100%
+
+section[data-type="sidebar"] > header h1
+  font-size: 2.2rem
+  line-height: 4.8rem
+  text-align: left
+  white-space: nowrap
+  text-overflow: ellipsis
+  display: block
+  overflow: hidden
+  margin: 0 0 0 3rem
+  height: 100%
+
+section[data-type="sidebar"] > header h1 em
+  font-weight: bold
+  font-size: 1.5rem
+  line-height: 1em
+
+/* Generic set of actions in toolbar */
+section[data-type="sidebar"] > header menu[type="toolbar"]
+  height: 100%
+  float: right
+
+section[data-type="sidebar"] > header menu[type="toolbar"] a,
+section[data-type="sidebar"] > header menu[type="toolbar"] button
+  height: 4.9rem
+  line-height: 4.9rem
+  float: left
+  background: none
+  padding: 0 1.75rem
+  -moz-box-sizing: border-box
+  min-width: 5rem
+  text-align: center
+
+section[data-type="sidebar"] > header menu[type="toolbar"] a:last-child,
+section[data-type="sidebar"] > header menu[type="toolbar"] button:last-child
+  background: url("..//styles/drawer/images/ui/separator.png") no-repeat left center/auto 3.1rem
+
+section[data-type="sidebar"] > header menu[type="toolbar"]
+  padding: 0
+  margin: 0
+
+section[data-type="sidebar"] > header a,
+section[data-type="sidebar"] > header button
+  border: none
+  background: none
+  padding: 0
+  overflow: hidden
+  font-weight: 600
+  font-size: 1.4rem
+  line-height: 1.1em
+  color: #fff
+
+section[data-type="sidebar"] > header a:first-letter,
+section[data-type="sidebar"] > header button:first-letter
+  text-transform: uppercase
+
+/* Icon definitions */
+section[data-type="sidebar"] > header .icon
+  display: inline-block
+  width: 3rem
+  height: 4.9rem
+  margin: 0 -1rem
+  background: transparent no-repeat center center/100% auto
+  font-size: 0
+  overflow: hidden
+  position: relative
+
+section[data-type="sidebar"]:after
+  content: ""
+  width: 1rem
+  background: url("..//styles/drawer/images/ui/shadow.png") right top repeat-y
+  height: 100%
+  position: absolute
+  top: 0
+  right: 0
+  z-index: 5
+
+section[data-type="sidebar"] > nav
+  overflow-y: auto
+  max-height: 100%
+  margin-right: -0.8rem
+
+section[data-type="sidebar"] > nav > h2
+  font-weight: bold
+  font-size: 1.4rem
+  line-height: 3.3rem
+  text-indent: 3rem
+  color: #fff
+  background: url("..//styles/drawer/images/ui/pattern_subheader.png") repeat left top
+  border-bottom: 0.1rem solid #596068
+  margin: 0
+  padding-right: 0.8rem
+
+section[data-type="sidebar"] [role="toolbar"]
+  position: absolute
+
+section[data-type="sidebar"] > nav > ul
+  width: 100%
+  margin: 0
+  padding: 0
+
+section[data-type="sidebar"] > nav > ul > li
+  color: #fff
+  list-style: none
+  transition: background 0.2s ease
+
+section[data-type="sidebar"] > nav > ul > li:active
+  background: #00abcc
+
+section[data-type="sidebar"] > nav > ul > li > a
+  text-decoration: none
+  color: #fff
+  font-size: 1.6rem
+  line-height: 4.35rem
+  border-bottom: 0.1rem solid #596068
+  text-indent: 3rem
+  padding-right: 0.8rem
+  width: 100%
+  -moz-box-sizing: border-box
+  display: block
+  text-overflow: ellipsis
+  white-space: nowrap
+  overflow: hidden
+
+/* RTL View */
+html[dir="rtl"] section[role="region"]:target
+  transform: translateX(-80%)
+
+/* Sidebar */
+html[dir="rtl"] section[data-type="sidebar"]
+  left: auto
+  right: 0
+
+/* Sidebar header */
+html[dir="rtl"] section[data-type="sidebar"] > header
+  background-position: right bottom
+
+html[dir="rtl"] section[data-type="sidebar"] > header:after
+  background-position: right top
+
+html[dir="rtl"] section[data-type="sidebar"] > header h1
+  text-align: right
+  margin: 0 3rem 0 0
+
+/* Generic set of actions in toolbar */
+html[dir="rtl"] section[data-type="sidebar"] > header menu[type="toolbar"]
+  float: left
+
+html[dir="rtl"] section[data-type="sidebar"] > header menu[type="toolbar"] a,
+html[dir="rtl"] section[data-type="sidebar"] > header menu[type="toolbar"] button
+  float: left
+
+html[dir="rtl"] section[data-type="sidebar"] > header menu[type="toolbar"] a:last-child,
+html[dir="rtl"] section[data-type="sidebar"] > header menu[type="toolbar"] button:last-child
+  background-position: right center
+
+html[dir="rtl"] section[data-type="sidebar"]:after
+  background-image: url("..//styles/drawer/images/ui/shadow_rtl.png")
+  background-position: left top
+  left: 0
+  right: auto
+
+html[dir="rtl"] section[data-type="sidebar"] > nav > h2
+  background-position: right top
+  padding-left: 0.8rem
+  /*padding-right: auto;*/
+
+/*----------------------------------End Drawer--------------------------------------*/
+/*------------------------------------Begin Header------------------------------------*/
+/* -------------------------------------------------------------------
+  HEADERS: layout
+  Form factor or Skin dependent styles should NOT be defined here.
+------------------------------------------------------------------- */
+section[role="region"] > header:first-child
+  position: relative
+  display: block
+  z-index: 10
+  padding: 0
+  height: 5rem
+  border: none
+
+section[role="region"] > header:first-child h1
+  font-size: 2.3rem
+  line-height: 5rem
+  white-space: nowrap
+  text-overflow: ellipsis
+  display: block
+  overflow: hidden
+  margin: 0
+  padding: 0 1rem
+  height: 100%
+  font-weight: 300
+  font-style: italic
+  text-align: center
+
+section[role="region"] > header:first-child h1 em
+  font-weight: 400
+  font-size: 1.5rem
+  line-height: 1em
+  font-style: normal
+
+section[role="region"] > header:first-child menu
+  height: 100%
+  float: right
+  padding: 0
+  margin: 0
+
+/* ----------------------------------
+  Buttons
+---------------------------------- */
+section[role="region"] > header:first-child a,
+section[role="region"] > header:first-child button
+  box-sizing: border-box
+  position: relative
+  display: block
+  overflow: hidden
+  float: left
+  min-width: 5rem
+  width: auto
+  height: 5rem
+  border: none
+  background: none
+  padding: 0 1rem
+  margin: 0
+  font-weight: 400
+  font-size: 1.5rem
+  line-height: 5rem
+  border-radius: 0
+  text-decoration: none
+  text-align: center
+  text-shadow: none
+  font-style: italic
+
+/* Pressed state */
+section[role="region"] > header:first-child a:focus
+  outline: none
+
+section[role="region"] > header:first-child button::-moz-focus-inner
+  outline: none
+  border: none
+  margin-top: -0.2rem
+  /* To fix line-height bug (697451) */
+  padding: 0
+
+/* Disabled state */
+section[role="region"] > header:first-child a[aria-disabled="true"],
+section[role="region"] > header:first-child button[disabled]
+  opacity: 0.3
+  pointer-events: none
+
+/* ----------------------------------
+  Icons
+---------------------------------- */
+section[role="region"] > header:first-child .icon
+  display: block
+  width: 3rem
+  height: 5rem
+  background: transparent no-repeat center/3rem auto
+  font-size: 0
+
+/* ----------------------------------
+  Subheader
+---------------------------------- */
+section[role="region"] > header
+  z-index: 0
+  height: auto
+
+section[role="region"] header h2
+  margin: 0
+  padding: 0.8rem 3rem
+  font-weight: 400
+  font-size: 1.5rem
+  line-height: 1.8rem
+
+/* ----------------------------------
+  right-to-left
+---------------------------------- */
+html[dir="rtl"] section[role="region"] > header:first-child menu
+  float: left
+
+html[dir="rtl"] section[role="region"] > header:first-child button,
+html[dir="rtl"] section[role="region"] > header:first-child a
+  float: right
+
+html[dir="rtl"] section[role="region"] > header:first-child .icon-back
+  transform: rotate(180deg)
+
+/* -----------------------------------------------------------------
+  HEADER SKIN: default
+  Default values in case we are not overriding them using
+  class="skin-*"
+----------------------------------------------------------------- */
+section[role="region"] > header:first-child
+  color: #fff
+  background-color: #f97c17
+
+section[role="region"] > header:first-child h1
+  color: #fff
+
+section[role="region"] > header:first-child a,
+section[role="region"] > header:first-child button
+  color: rgba(0,0,0,0.6)
+
+section[role="region"] > header:first-child a:active,
+section[role="region"] > header:first-child button:active,
+section[role="region"] > header:first-child a:hover,
+section[role="region"] > header:first-child button:hover
+  background-color: rgba(0,0,0,0.07)
+
+section[role="region"] > header:first-child a:focus,
+section[role="region"] > header:first-child button:focus
+  background-color: transparent
+
+/* ----------------------------------
+  Icons
+---------------------------------- */
+section[role="region"] > header:first-child .icon-add
+  background-image: url("..//styles/headers/images/icons/add.png")
+
+section[role="region"] > header:first-child .icon-compose
+  background-image: url("..//styles/headers/images/icons/compose.png")
+
+section[role="region"] > header:first-child .icon-edit
+  background-image: url("..//styles/headers/images/icons/edit.png")
+
+section[role="region"] > header:first-child .icon-send
+  background-image: url("..//styles/headers/images/icons/send.png")
+
+section[role="region"] > header:first-child .icon-close
+  background-image: url("..//styles/headers/images/icons/close.png")
+
+section[role="region"] > header:first-child .icon-back
+  background-image: url("..//styles/headers/images/icons/back.png")
+
+section[role="region"] > header:first-child .icon-menu
+  background-image: url("..//styles/headers/images/icons/menu.png")
+
+section[role="region"] > header:first-child .icon-user
+  background-image: url("..//styles/headers/images/icons/user.png")
+
+section[role="region"] > header:first-child .icon-up
+  background-image: url("..//styles/headers/images/icons/up.png")
+
+section[role="region"] > header:first-child .icon-down
+  background-image: url("..//styles/headers/images/icons/down.png")
+
+section[role="region"] > header:first-child .icon-options
+  background-image: url("..//styles/headers/images/icons/options.png")
+
+/* ----------------------------------
+  Subheader
+---------------------------------- */
+section[role="region"] header h2
+  color: #424242
+  border-bottom: solid 0.1rem #e6e6e6
+
+/* -----------------------------------------------------------------
+  HEADER SKIN: comms
+  .skin-comms will override default values
+----------------------------------------------------------------- */
+.skin-comms section[role="region"] > header:first-child,
+section[role="region"].skin-comms > header:first-child
+  background-color: #00adad
+
+.skin-comms section[role="region"] > header:first-child a,
+.skin-comms section[role="region"] > header:first-child button,
+section[role="region"].skin-comms > header:first-child a,
+section[role="region"].skin-comms > header:first-child button
+  color: rgba(0,0,0,0.5)
+
+.skin-comms section[role="region"] > header:first-child a:active,
+.skin-comms section[role="region"] > header:first-child button:active,
+.skin-comms section[role="region"] > header:first-child a:hover,
+.skin-comms section[role="region"] > header:first-child button:hover,
+section[role="region"].skin-comms > header:first-child a:active,
+section[role="region"].skin-comms > header:first-child button:active,
+section[role="region"].skin-comms > header:first-child a:hover,
+section[role="region"].skin-comms > header:first-child button:hover
+  background-color: rgba(0,0,0,0.1)
+
+.skin-comms section[role="region"] > header:first-child a:focus,
+.skin-comms section[role="region"] > header:first-child button:focus,
+section[role="region"].skin-comms > header:first-child a:focus,
+section[role="region"].skin-comms > header:first-child button:focus
+  background-color: transparent
+
+/* -----------------------------------------------------------------
+  HEADER SKIN: dark
+  .skin-dark will override default values
+----------------------------------------------------------------- */
+section[role="region"].skin-dark > header:first-child,
+.skin-dark > section[role="region"] > header:first-child
+  background-color: #242d33
+
+.skin-dark section[role="region"] > header:first-child a,
+.skin-dark section[role="region"] > header:first-child button,
+section[role="region"].skin-dark > header:first-child a,
+section[role="region"].skin-dark > header:first-child button
+  color: #00aac5
+
+.skin-dark section[role="region"] > header:first-child a:active,
+.skin-dark section[role="region"] > header:first-child button:active,
+.skin-dark section[role="region"] > header:first-child a:hover,
+.skin-dark section[role="region"] > header:first-child button:hover,
+section[role="region"].skin-dark > header:first-child a:active,
+section[role="region"].skin-dark > header:first-child button:active,
+section[role="region"].skin-dark > header:first-child a:hover,
+section[role="region"].skin-dark > header:first-child button:hover
+  background-color: rgba(0,0,0,0.4)
+
+.skin-dark section[role="region"] > header:first-child a:focus,
+.skin-dark section[role="region"] > header:first-child button:focus,
+section[role="region"].skin-dark > header:first-child a:focus,
+section[role="region"].skin-dark > header:first-child button:focus
+  background-color: transparent
+
+section[role="region"].skin-dark header h2,
+.skin-dark > section[role="region"] header h2
+  background-color: #2c353b
+  color: #fff
+  border: none
+
+/* -----------------------------------------------------------------
+  HEADER SKIN: organic
+  .skin-organic will override default values
+----------------------------------------------------------------- */
+section[role="region"].skin-organic > header:first-child,
+.skin-organic section[role="region"] > header:first-child
+  color: #868692
+  background-color: #f4f4f4
+
+section[role="region"].skin-organic > header:first-child h1,
+.skin-organic section[role="region"] > header:first-child h1
+  color: #868692
+
+section[role="region"].skin-organic > header:first-child a,
+section[role="region"].skin-organic > header:first-child button,
+.skin-organic section[role="region"] > header:first-child a,
+.skin-organic section[role="region"] > header:first-child button
+  color: #00aac5
+
+section[role="region"].skin-organic > header:first-child a:focus,
+section[role="region"].skin-organic > header:first-child button:focus,
+.skin-organic section[role="region"] > header:first-child a:focus,
+.skin-organic section[role="region"] > header:first-child button:focus
+  background-color: transparent
+
+/* ----------------------------------
+  Icons
+---------------------------------- */
+section[role="region"].skin-organic > header:first-child .icon-back,
+.skin-organic section[role="region"] > header:first-child .icon-back
+  background-image: url("..//styles/headers/images/icons/organic/back.png")
+
+section[role="region"].skin-organic > header:first-child .icon-close,
+.skin-organic section[role="region"] > header:first-child .icon-close
+  background-image: url("..//styles/headers/images/icons/organic/close.png")
+
+section[role="region"].skin-organic > header:first-child .icon-add,
+.skin-organic section[role="region"] > header:first-child .icon-add
+  background-image: url("..//styles/headers/images/icons/organic/add.png")
+
+section[role="region"].skin-organic > header:first-child .icon-edit,
+.skin-organic section[role="region"] > header:first-child .icon-edit
+  background-image: url("..//styles/headers/images/icons/organic/edit.png")
+
+/* ----------------------------------
+  Subheader
+---------------------------------- */
+section[role="region"].skin-organic header h2,
+.skin-organic section[role="region"] header h2
+  background-color: #e7e7e7
+  color: #4d4d4d
+  border: none
+
+/*---------------------------------End Header---------------------------------------*/
+/*--------------------------------Begin inputs_areas-------------------------------*/
+/* ----------------------------------
+* Input areas
+* ---------------------------------- */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="url"],
+input[type="number"],
+textarea
+  font-family: sans-serif
+  box-sizing: border-box
+  display: block
+  width: 100%
+  height: 4rem
+  line-height: 4rem
+  resize: none
+  padding: 0 1.5rem
+  font-size: 1.6rem
+  border: 0.1rem solid #c7c7c7
+  border-radius: 0
+  box-shadow: none
+  /* override the box-shadow from the system (performance issue) */
+  color: #333
+  background: #fff
+  margin: 0 0 1rem 0
+
+label:active
+  background-color: transparent
+
+textarea
+  height: 10rem
+  max-height: 10rem
+  line-height: 2rem
+
+input::-moz-placeholder,
+textarea::-moz-placeholder
+  color: #a9a9a9
+  opacity: 1
+  font-style: italic
+  font-weight: 400
+
+input[disabled],
+textarea[disabled]
+  opacity: 0.5
+
+.skin-dark input[type="text"],
+.skin-dark input[type="password"],
+.skin-dark input[type="email"],
+.skin-dark input[type="tel"],
+.skin-dark input[type="search"],
+.skin-dark input[type="url"],
+.skin-dark input[type="number"],
+.skin-dark textarea
+  color: #fff
+  background-color: transparent
+  border-color: #454545
+
+form p
+  position: relative
+  margin: 0
+
+form p input + button[type="reset"],
+form p textarea + button[type="reset"]
+  position: absolute
+  top: 0
+  right: -0.3rem
+  width: 4rem
+  height: 4rem
+  padding: 0
+  border: none
+  font-size: 0
+  opacity: 0
+  pointer-events: none
+  background: url("..//styles/input_areas/images/clear.png") no-repeat 50% 50%/2.4rem auto
+
+.skin-dark p input + button[type="reset"],
+.skin-dark p textarea + button[type="reset"]
+  background-image: url("..//styles/input_areas/images/clear_dark.png")
+
+/* To avoid colission with BB butons */
+li input + button[type="reset"]:after,
+li textarea + button[type="reset"]:after
+  background: none
+
+textarea
+  padding: 1.2rem
+
+form p input:focus
+  padding-right: 3rem
+
+form p input:focus + button[type="reset"],
+form p textarea:focus + button[type="reset"]
+  opacity: 1
+  pointer-events: all
+
+/* Fieldset */
+fieldset
+  position: relative
+  overflow: hidden
+  margin: 1.5rem 0 0 0
+  padding: 0
+  font-size: 2rem
+  line-height: 1em
+  background: none
+  border: 0
+
+fieldset legend,
+input[type="date"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"]
+  border: 0.1rem solid #c7c7c7
+  width: 100%
+  box-sizing: border-box
+  font-family: sans-serif
+  font-style: italic
+  font-size: 1.6rem
+  margin: 0 0 1.5rem
+  padding: 0 1.5rem
+  text-overflow: ellipsis
+  white-space: nowrap
+  overflow: hidden
+  height: 4rem
+  color: #333
+  border-radius: 0
+  background: #fff url("..//styles/input_areas/images/dialog.svg") no-repeat calc(100% - 1rem) calc(100% - 1rem)
+
+fieldset legend
+  margin: 0 0 1rem
+  padding: 1rem 1.5rem 0
+  background-color: rgba(0,0,0,0.05)
+
+fieldset[disabled]
+  opacity: 0.5
+  pointer-events: none
+
+.skin-dark fieldset legend,
+.skin-dark input[type="date"],
+.skin-dark input[type="time"],
+.skin-dark input[type="datetime"],
+.skin-dark input[type="datetime-local"]
+  color: #fff
+  background-color: transparent
+  border-color: #454545
+
+fieldset[disabled] legend,
+input[type="date"][disabled],
+input[type="time"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled]
+  background-image: url("..//styles/input_areas/images/dialog_disabled.svg")
+  background-color: transparent
+
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus
+  box-shadow: none
+  border-bottom-color: #c7c7c7
+
+.skin-dark input[type="date"]:focus,
+.skin-dark input[type="time"]:focus,
+.skin-dark input[type="datetime"]:focus,
+.skin-dark input[type="datetime-local"]:focus
+  box-shadow: none
+  border-bottom-color: #454545
+
+input[type="date"]:active,
+input[type="time"]:active,
+input[type="datetime"]:active,
+input[type="datetime-local"]:active
+  background-color: #b2f2ff
+  color: #fff
+
+.skin-dark input[type="date"]:active,
+.skin-dark input[type="time"]:active,
+.skin-dark input[type="datetime"]:active,
+.skin-dark input[type="datetime-local"]:active
+  background-color: #0ac
+  background-image: url("..//styles/input_areas/images/dialog_active.svg")
+
+/* fix for required inputs with wrong or empty value e.g. [type=email] */
+input:invalid,
+textarea:invalid,
+.skin-dark input:invalid,
+.skin-dark textarea:invalid
+  color: #b90000
+
+input:focus,
+textarea:focus,
+.skin-dark input:focus,
+.skin-dark textarea:focus
+  box-shadow: inset 0 -0.1rem 0 #00caf2
+  border-bottom-color: #00caf2
+
+input:invalid:focus,
+textarea:invalid:focus,
+.skin-dark input:invalid:focus,
+.skin-dark textarea:invalid:focus
+  box-shadow: inset 0 -0.1rem 0 #820000
+  border-bottom-color: #820000
+
+/* Tidy (search/submit) */
+form[role="search"]
+  position: relative
+  height: 3.7rem
+  background: #f4f4f4
+
+form[role="search"].skin-dark
+  background: #202020
+
+form[role="search"] p
+  padding: 0 1.5rem 0 3rem
+  overflow: hidden
+  position: relative
+
+form[role="search"] p input,
+form[role="search"] p textarea
+  height: 3.7rem
+  border: none
+  background: none
+  padding: 0
+  margin: 0
+  box-shadow: none
+
+form[role="search"] p textarea
+  padding: 1rem 0 0 0
+
+form[role="search"] p input::-moz-placeholder
+  background: url("..//styles/input_areas/images/search.svg") right -0.5rem center no-repeat
+  background-size: 3rem
+
+form[role="search"].skin-dark p input::-moz-placeholder
+  background-image: url("..//styles/input_areas/images/search_dark.svg")
+
+form[role="search"] p input:focus::-moz-placeholder
+  background: none
+
+form[role="search"] p input:invalid,
+form[role="search"] p textarea:invalid,
+form[role="search"] p input:focus,
+form[role="search"] p textarea:focus
+  border: none
+  box-shadow: none
+
+form[role="search"].skin-dark p input,
+form[role="search"].skin-dark p textarea
+  color: #fff
+  background: none
+  box-shadow: none
+
+form[role="search"] button[type="submit"]
+  float: right
+  min-width: 6rem
+  height: 3.7rem
+  padding: 0 1.5rem
+  border: none
+  color: #00aac5
+  font-weight: normal
+  font-size: 1.6rem
+  line-height: 3.7rem
+  width: auto
+  border-radius: 0
+  margin: 0
+  position: relative
+  background-color: unset
+  font-style: italic
+  overflow: visible
+
+form[role="search"] button[type="submit"]:after
+  content: ""
+  position: absolute
+  left: -0.1rem
+  top: 0.7rem
+  bottom: 0.7rem
+  width: 0.1rem
+  background: #c7c7c7
+
+form[role="search"] button[type="submit"].icon
+  font-size: 0
+  background-repeat: no-repeat
+  background-position: center
+  background-size: 3rem
+
+form[role="search"] p input + button[type="reset"]
+  height: 3.7rem
+  right: 0.5rem
+
+form[role="search"].skin-dark button[type="submit"]:after
+  background-color: #575757
+
+form[role="search"] button[type="submit"] + p > textarea
+  height: 3.7rem
+  line-height: 2rem
+
+form[role="search"] button[type="submit"] + p button
+  height: 3.7rem
+
+form[role="search"].full button[type="submit"]
+  display: none
+
+form[role="search"] button.icon:active,
+form[role="search"] button[type="submit"]:active
+  background-color: #b2f2ff
+  color: #fff
+
+form[role="search"].skin-dark button.icon:active,
+form[role="search"].skin-dark button[type="submit"]:active
+  background: #0ac
+
+form[role="search"] button[type="submit"][disabled]
+  color: #adadad
+  pointer-events: none
+
+form button::-moz-focus-inner
+  border: none
+  outline: none
+
+/* .bb-editable - e.g email & SMS recipients */
+.bb-editable [contenteditable]
+  display: inline-block
+  box-sizing: border-box
+  position: relative
+  max-width: calc(100% - 1.4rem)
+  overflow: hidden
+  padding: 0 1.5rem
+  margin: 0 0 0.6rem 0
+  line-height: 2.8rem
+  border-radius: 1.4rem
+  text-overflow: ellipsis
+  font-size: 1.6rem
+  font-style: italic
+  white-space: nowrap
+  color: #333
+  background: #fff
+
+.bb-editable [contenteditable].icon
+  padding-right: 3.7rem
+
+.bb-editable [contenteditable="false"].invalid
+  background-color: #fedcdc
+  padding-left: 3.3rem
+
+.bb-editable [contenteditable="false"].invalid:before
+  content: "!"
+  position: absolute
+  top: 0.6rem
+  left: 0.8rem
+  display: block
+  width: 1.7rem
+  height: 1.6rem
+  padding: 0
+  border-radius: 50%
+  line-height: 1.6rem
+  font-size: 1.2rem
+  text-align: center
+  text-indent: -0.1rem
+  font-style: normal
+  font-weight: 600
+  color: #fff
+  background-color: #b80404
+
+.bb-editable [contenteditable="false"].invalid:hover:before,
+.bb-editable [contenteditable="false"].invalid:active:before
+  color: #b2f2ff
+  background-color: #fff
+
+.bb-editable [contenteditable]:hover,
+.bb-editable [contenteditable]:active,
+.bb-editable [contenteditable].invalid:hover,
+.bb-editable [contenteditable].invalid:active
+  color: #fff
+  background-color: #b2f2ff
+
+.bb-editable [contenteditable].icon:after
+  content: ""
+  position: absolute
+  top: 0.7rem
+  right: 0
+  width: 3rem
+  height: 3rem
+  background-position: -0.7rem -3.8rem
+  background-repeat: no-repeat
+  background-size: 3rem
+
+.bb-editable [contenteditable].icon:hover:after,
+.bb-editable [contenteditable].icon:active:after
+  background-position: -0.7rem -0.8rem
+
+.bb-editable [contenteditable].invalid.icon:after
+  background-position: -0.7rem -6.8rem
+
+.bb-editable [contenteditable].invalid.icon:hover:after,
+.bb-editable [contenteditable].invalid.icon:active:after
+  background-position: -0.7rem -0.8rem
+
+.bb-editable [contenteditable="true"],
+.bb-editable [contenteditable="true"]:hover,
+.skin-comms .bb-editable [contenteditable="true"]:hover
+  padding: 0 0.2rem
+  white-space: normal
+  font-size: 1.8rem
+  font-style: normal
+  color: #000
+  background: none repeat scroll 0 0 transparent
+
+.skin-comms .bb-editable [contenteditable]:hover,
+.skin-comms .bb-editable [contenteditable]:active
+  color: #fff
+  background-color: #29bbb5
+
+/******************************************************************************
+ * Right-to-Left layout
+ */
+html[dir="rtl"] fieldset legend
+  background: rgba(0,0,0,0.05) url("..//styles/input_areas/images/dialog_rtl.svg") no-repeat 1rem calc(100% - 1rem)
+
+html[dir="rtl"] input[type="date"],
+html[dir="rtl"] input[type="time"],
+html[dir="rtl"] input[type="datetime"],
+html[dir="rtl"] input[type="datetime-local"]
+  background: #fff url("..//styles/input_areas/images/dialog_rtl.svg") no-repeat 1rem calc(100% - 1rem)
+
+html[dir="rtl"] fieldset[disabled] legend,
+html[dir="rtl"] input[type="date"][disabled],
+html[dir="rtl"] input[type="time"][disabled],
+html[dir="rtl"] input[type="datetime"][disabled],
+html[dir="rtl"] input[type="datetime-local"][disabled]
+  background-image: url("..//styles/input_areas/images/dialog_disabled_rtl.svg")
+
+html[dir="rtl"] form p input:focus
+  padding: 0 1.5rem 0 3rem
+
+html[dir="rtl"] form p input + button[type="reset"],
+html[dir="rtl"] form p textarea + button[type="reset"]
+  right: auto
+  left: -0.3rem
+
+html[dir="rtl"] form[role="search"] p
+  padding: 0 3rem 0 1.5rem
+
+html[dir="rtl"] form[role="search"] p input + button[type="reset"]
+  left: 0.5rem
+
+html[dir="rtl"] form[role="search"] p input::-moz-placeholder
+  background-position: -0.5rem center
+
+html[dir="rtl"] form[role="search"] button[type="submit"]
+  float: left
+
+html[dir="rtl"] form[role="search"] button[type="submit"]:after
+  right: 0
+  left: auto
+
+/*--------------------------------End inputs_areas---------------------------------*/
