@@ -43,7 +43,6 @@ botonx.addEventListener("click",function (ev){
         }
     }
     function mostrarAlerta() {
-        //navigator.vibrate(200);
         $('.resultadoFinal').slideDown(100);
         var comprobar = document.getElementById('resultado');
         comprobar.innerHTML = "¡Hay elementos faltantes!"
@@ -63,7 +62,6 @@ botonx.addEventListener("click",function (ev){
         var res2= ((n2)*(n3));
         var n= res2*-1;
         var fin= res+n;
-        //alert('Determinante = '+fin.toFixed(3));
         function mostrarResultado(){
             $('.resultadoFinal').slideDown(100);
         }
