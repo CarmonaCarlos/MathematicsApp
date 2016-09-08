@@ -231,7 +231,6 @@ borrar.addEventListener("click",function (){
             }
         }
     function mostrarAlerta() {
-        //navigator.vibrate(200);
         $('.resultadoFinal').slideDown(100);
         var comprobar = document.getElementById('resultado');
         comprobar.innerHTML = "¡Hay elementos faltantes!"
@@ -295,8 +294,6 @@ borrar.addEventListener("click",function (){
         var d= (n4*-1)*(((n6)*((n12*n18*n25)+(n13*n20*n22)+(n17*n23*n15)+(n15*n18*n22*-1)+(n23*n20*n12*-1)+(n17*n13*n25*-1)))+((n7*-1)*((n11*n18*n25)+(n13*n20*n21)+(n16*n23*n15)+(n15*n18*n21*-1)+(n23*n20*n11*-1)+(n16*n13*n25*-1)))+((n8)*((n11*n17*n25)+(n12*n20*n21)+(n16*n22*n15)+(n15*n17*n21*-1)+(n22*n20*n11*-1)+(n16*n12*n25*-1)))+((n10*-1)*((n11*n17*n23)+(n12*n18*n21)+(n16*n22*n13)+(n13*n17*n21*-1)+(n22*n18*n11*-1)+(n16*n12*n23*-1))));
         var e= n5*(((n6)*((n12*n18*n24)+(n13*n19*n22)+(n17*n23*n14)+(n14*n18*n22*-1)+(n23*n19*n12*-1)+(n17*n13*n24*-1)))+((n7*-1)*((n11*n18*n24)+(n13*n19*n21)+(n16*n23*n14)+(n14*n18*n21*-1)+(n23*n19*n11*-1)+(n16*n14*n24*-1)))+((n8)*((n11*n17*n24)+(n12*n19*n21)+(n16*n22*n14)+(n14*n17*n21*-1)+(n22*n19*n11*-1)+(n16*n12*n24*-1)))+((n9*-1)*((n11*n17*n23)+(n16*n22*n13)+(n12*n18*n21)+(n13*n17*n21*-1)+(n22*n18*n11*-1)+(n16*n12*n23*-1))));
         var res= a+b+c+d+e;
-        //alert('Determinante = '+res.toFixed(3));
-
         function mostrarResultado(){
             $('.resultadoFinal').slideDown(100);
         }
