@@ -114,7 +114,6 @@ botonx.addEventListener("click",function (ev){
     }
   }
   function mostrarAlerta() {
-    //navigator.vibrate(200);
     $('.resultadoFinal').slideDown(100);
     var comprobar = document.getElementById('resultado');
     comprobar.innerHTML = "¡Hay elementos faltantes!"
@@ -153,8 +152,6 @@ botonx.addEventListener("click",function (ev){
     var x= d2/d1;
     var y= d3/d1;
     var z= d4/d1;
-    //var msg= 'X = '+x.toFixed(3)+'\n'+'Y = '+y.toFixed(3)+'\n'+'Z = '+z.toFixed(3);
-          //alert(msg);
     function mostrarResultado(){
       $('.resultadoFinal').slideDown(100);
     };
