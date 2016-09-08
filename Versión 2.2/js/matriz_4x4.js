@@ -150,7 +150,6 @@ botonx.addEventListener("click",function (ev){
         }
     }
     function mostrarAlerta() {
-        //navigator.vibrate(200);
         $('.resultadoFinal').slideDown(100);
         var comprobar = document.getElementById('resultado');
         comprobar.innerHTML = "¡Hay elementos faltantes!"
@@ -195,7 +194,6 @@ botonx.addEventListener("click",function (ev){
         var c=((n5*n10*n16)+(n6*n12*n13)+(n9*n14*n8)+(n8*n10*n13*-1)+(n14*n12*n5*-1)+(n9*n6*n16*-1))*(n3);
         var d=((n5*n10*n15)+(n6*n11*n13)+(n9*n14*n7)+(n7*n10*n13*-1)+(n14*n11*n5*-1)+(n9*n6*n15*-1))*(n4*-1);
         var res=(a+b+c+d);
-        //alert('Determinante = '+res.toFixed(3));
         function mostrarResultado(){
             $('.resultadoFinal').slideDown(100);
         }
