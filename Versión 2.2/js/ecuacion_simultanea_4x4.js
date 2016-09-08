@@ -186,7 +186,6 @@
             }
           }
           function mostrarAlerta() {
-    //navigator.vibrate(200);
     $('.resultadoFinal').slideDown(100);
     var comprobar = document.getElementById('resultado');
     comprobar.innerHTML = "¡Hay elementos faltantes!"
@@ -295,8 +294,6 @@
                 return t;
               }
               var T= d(n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15,n16,t1,t2,t3,t4,res);
-              //var msg= 'X = '+X.toFixed(3)+'\n'+'Y = '+Y.toFixed(3)+'\n'+'Z = '+Z.toFixed(3)+'\n'+'W = '+T.toFixed(3);
-              //alert(msg);
               function mostrarResultado(){
                 $('.resultadoFinal').slideDown(100);
               };
